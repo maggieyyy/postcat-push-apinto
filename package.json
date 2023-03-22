@@ -1,0 +1,83 @@
+{
+  "name": "postcat-push-apinto",
+  "title": "Push to Apinto",
+  "version": "0.0.1",
+  "description": "Export OpenAPI data to Apinto",
+  "author": "Apinto",
+  "main": "dist/index.js",
+  "logo": "https://data.eolink.com//userFile/1679476224995972673apinto.png?attname=",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "build:watch": "rollup -w -c rollup.config.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@types/lodash-es": "*",
+    "esbuild": "^0.14.38",
+    "nodemon": "^2.0.15",
+    "rollup": "^2.78.0",
+    "rollup-plugin-dts": "^4.2.1",
+    "rollup-plugin-esbuild": "^4.9.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.6"
+  },
+  "dependencies": {
+    "lodash": "*",
+    "lodash-es": "^4.17.21",
+    "openapi-types": "^12.0.2"
+  },
+  "features": {
+    "pushAPI": {
+      "action": "sync_to_remote",
+      "label": "Apinto",
+      "description": "${function.description}",
+      "icon": "https://data.eolink.com//userFile/1679476224995972673apinto.png?attname=",
+      "extestion": ""
+    },
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "apinto.addr": {
+          "type": "string",
+          "required": true,
+          "default": "",
+          "label": "Apinto 控制台地址",
+          "description": "请输入控制台地址，格式如：http://{ip或域名}:{端口号}"
+        },
+        "apinto.token": {
+          "type": "string",
+          "required": true,
+          "default": "",
+          "label": "Token",
+          "description": "${configuration.token.description}"
+        },
+        "apinto.upstream": {
+          "type": "string",
+          "required": true,
+          "default": "",
+          "label": "上游名称"
+        },
+        "apinto.group": {
+          "type": "string",
+          "required": true,
+          "default": "",
+          "label": "分组 ID"
+        },
+        "apinto.prefix": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "label": "请求前缀"
+        }
+      }
+    },
+    "i18n": {
+      "sourceLocale": "en-US",
+      "locales": [
+        "zh-Hans"
+      ]
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "license": "ISC"
+}

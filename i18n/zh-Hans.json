@@ -1,0 +1,9 @@
+{
+    "title":"推送到 Apinto",
+    "description":"将 Postcat API 数据一键推送到 Apinto 开源 API 网关",
+    "function.description":"将 Postcat API 数据一键推送到Apinto开源API网关",
+    "configuration.token.description":"Apinto OpenAPI 鉴权 Token，配置后才可访问",
+    "configuration.upstream.description":"上游名称",
+    "configuration.group.description":"分组 ID",
+    "configuration.prefix.description":"请求前缀"
+}
