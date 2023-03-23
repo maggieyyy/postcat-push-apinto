@@ -1,9 +1,11 @@
 {
-    "title":"推送到 Apinto",
-    "description":"将 Postcat API 数据一键推送到 Apinto 开源 API 网关",
-    "function.description":"将 Postcat API 数据一键推送到Apinto开源API网关",
+    "title":"同步到 Apinto",
+    "description":"将数据以 OpenAPI 的格式推送到 Apinto 平台",
+    "function.description":"将 API 信息推送到 Apinto",
+    "configuration.addr.description":"请输入控制台地址，格式如：http://{ip或域名}:{端口号}",
+    "configuration.addr.label":"Apinto 控制台地址",
     "configuration.token.description":"Apinto OpenAPI 鉴权 Token，配置后才可访问",
-    "configuration.upstream.description":"上游名称",
-    "configuration.group.description":"分组 ID",
-    "configuration.prefix.description":"请求前缀"
+    "configuration.upstream.label":"上游名称",
+    "configuration.group.label":"分组 ID",
+    "configuration.prefix.label":"请求前缀"
 }

@@ -1,8 +1,8 @@
 {
   "name": "postcat-push-apinto",
-  "title": "Push to Apinto",
-  "version": "0.0.1",
-  "description": "Export OpenAPI data to Apinto",
+  "title": "${title}",
+  "version": "0.0.2",
+  "description": "Push OpenAPI data to Apinto",
   "author": "Apinto",
   "main": "dist/index.js",
   "logo": "https://data.eolink.com//userFile/1679476224995972673apinto.png?attname=",
@@ -10,6 +10,7 @@
     "build": "rollup -c rollup.config.js",
     "build:watch": "rollup -w -c rollup.config.js"
   },
+  "homepage": "https://www.apinto.com",
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@types/lodash-es": "*",
@@ -26,6 +27,13 @@
     "lodash-es": "^4.17.21",
     "openapi-types": "^12.0.2"
   },
+  "categories": [
+    "Data Migration"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eolinker/apinto-dashboard.git"
+  },
   "features": {
     "pushAPI": {
       "action": "sync_to_remote",
@@ -41,8 +49,8 @@
           "type": "string",
           "required": true,
           "default": "",
-          "label": "Apinto 控制台地址",
-          "description": "请输入控制台地址，格式如：http://{ip或域名}:{端口号}"
+          "label": "${configuration.addr.label}",
+          "description": "${configuration.addr.description}"
         },
         "apinto.token": {
           "type": "string",
@@ -55,19 +63,19 @@
           "type": "string",
           "required": true,
           "default": "",
-          "label": "上游名称"
+          "label": "${configuration.upstream.label}"
         },
         "apinto.group": {
           "type": "string",
           "required": true,
           "default": "",
-          "label": "分组 ID"
+          "label": "${configuration.group.label}"
         },
         "apinto.prefix": {
           "type": "string",
           "required": false,
           "default": "",
-          "label": "请求前缀"
+          "label": "${configuration.prefix.label}"
         }
       }
     },

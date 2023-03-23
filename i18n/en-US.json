@@ -1,0 +1,11 @@
+{
+    "title":"Push to Apinto",
+    "description":"Push API data to Apinto",
+    "function.description":"Push API data to Apinto",
+    "configuration.addr.description":"Please enter the Apinto dashboard address in the format: http://{ip or domain name}:{port number}",
+    "configuration.addr.label":"Apinto Dashboard Address",
+    "configuration.token.description":"Apinto OpenAPI token, which can only be accessed remotely after configuration",
+    "configuration.upstream.label":"Upstream Name",
+    "configuration.group.label":"Group ID",
+    "configuration.prefix.label":"Request Prefix"
+}
