@@ -1,7 +1,7 @@
 {
   "name": "postcat-push-apinto",
   "title": "${title}",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Push OpenAPI data to Apinto",
   "author": "Apinto",
   "main": "dist/index.js",
@@ -32,7 +32,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eolinker/apinto-dashboard.git"
+    "url": "git+https://github.com/eolinker/apinto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maggieyyy/postcat-push-apinto/issues"
   },
   "features": {
     "pushAPI": {
